@@ -5,7 +5,7 @@ This project is a **Python-based web scraper** designed to extract structured da
 
 ## 📁 Project Structure
 ```
-Zocket_Task/
+WebScraper_Project/
 │── main.py                # Entry point of the web scraper
 │── README.md              # Project documentation
 │── requirements.txt       # Dependencies required for execution
