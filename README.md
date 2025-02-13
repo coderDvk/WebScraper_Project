@@ -1,41 +1,92 @@
-Web Scraper Project
+# Web Scraper Project
 
-This project is a Python-based web scraper that extracts content (headings and paragraphs) from a given URL, processes the data, and provides a concise summary.
+## 📌 Overview
+This project is a **Python-based web scraper** designed to extract structured data from web pages, such as headings and paragraphs. The extracted data is processed and summarized for quick insights.
 
-Features
+## 📁 Project Structure
+```
+Zocket_Task/
+│── main.py                # Entry point of the web scraper
+│── README.md              # Project documentation
+│── requirements.txt       # Dependencies required for execution
+│── utils/                 # Utility scripts for scraping, extraction, and summarization
+│   ├── scraper.py         # Handles webpage scraping
+│   ├── extractor.py       # Extracts relevant text from HTML
+│   ├── summarizer.py      # Summarizes extracted data
+│── tests/                 # Unit tests for the modules
+```
 
-Scrapes HTML content from any provided URL.
-Extracts meaningful information such as headings and paragraphs.
-Summarizes extracted content to the most relevant points (first 5 sentences).
-Modular class-based design for scalability and maintainability.
+## ⚙️ How It Works
+1. **`main.py`**:
+   - Takes a **URL** input from the user.
+   - Uses `WebScraper` to **fetch HTML content**.
+   - Uses `DataExtractor` to **extract text** (headings & paragraphs).
+   - Uses `ContentSummarizer` to **generate a summary**.
+   - Displays the **extracted content** and **summary** in the terminal.
 
-Setup Instructions
+2. **`utils/` (Modules):**
+   - `scraper.py` → Fetches and parses the webpage.
+   - `extractor.py` → Extracts headings and paragraphs.
+   - `summarizer.py` → Summarizes the extracted content.
 
-Clone the repository:
-git clone https://github.com/Manishsingh89716/Zocket_Task_
-cd Zocket_Task_
+## 🚀 Installation & Setup
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/coderDvk/WebScraper_Project
+cd WebScraper_Projec
+```
 
-Install dependencies:
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
+(*Dependencies:* `beautifulsoup4`, `requests`, `nltk`, `pytest`)
 
-Run the program:
+### 3️⃣ Run the Scraper
+```bash
 python main.py
-Enter a URL when prompted (e.g., https://www.geeksforgeeks.org/java-programming-examples/).
+```
+- Enter a **URL** when prompted (e.g., `https://www.geeksforgeeks.org/java-programming-examples/`).
+- The scraper will extract and summarize the content.
 
-Usage
-Input a valid URL to scrape.
+## 📝 Example Output
+```
+Enter a URL to scrape: https://example.com
+Extracted Information:
+ - Heading 1: ...
+ - Paragraph: ...
 
-The program will:
-Scrape the content.
-Extract headings and paragraphs.
-Summarize the content into a concise overview.
-Results will be displayed directly in the terminal.
+Summary:
+ - Key insights from extracted data.
+```
 
-Testing
-To run unit tests, use:
+## 🛠️ Running Tests
+To ensure the scraper functions correctly, run the **unit tests**:
+```bash
 pytest tests/
+```
 
-Future Enhancements
-Handle pagination for multi-page scraping.
-Export extracted content to a file (e.g., CSV or JSON).
-Add support for dynamic websites using Selenium or Playwright.
+## 📌 Features & Future Enhancements
+### ✅ Current Features
+- Extracts **headings & paragraphs** from web pages.
+- Generates **summaries** for quick insights.
+- Supports **multiple pages & links**.
+- Implements **error handling** to manage invalid URLs.
+
+### 🔜 Future Enhancements
+- **Handle Pagination**: Support scraping multiple pages.
+- **Export Data**: Save results in CSV/JSON format.
+- **Support Dynamic Websites**: Integrate Selenium or Playwright for JavaScript-heavy pages.
+- **User-Agent Rotation**: Prevent blocking by websites.
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+### 🤝 Contributing
+If you’d like to contribute, feel free to fork this repository and submit a pull request.
+
+📩 For queries, contact **Your Email (dewanshvishwakarma0@gamil.com)**
+
+🚀 Happy Scraping! 🚀
+
