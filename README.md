@@ -86,7 +86,7 @@ This project is licensed under the **MIT License**.
 ### 🤝 Contributing
 If you’d like to contribute, feel free to fork this repository and submit a pull request.
 
-📩 For queries, contact **Your Email (dewanshvishwakarma0@gamil.com)**
+📩 For queries, contact **My Email (dewanshvishwakarma0@gamil.com)**
 
 🚀 Happy Scraping! 🚀
 
